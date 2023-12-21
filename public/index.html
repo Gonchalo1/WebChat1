@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Tutorial</title>
+    <style media="screen">
+        #chat {
+            height: 400px;
+            border: 1px solid #000;
+            width: 20%;
+        }
+        #message-box {
+            width: 20%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js" charset="UTF-8"></script>
+    <script src="main.js" charset="UTF-8"></script>
+</head>
+<body>
+    <h1>You have to open 2 browsers to chat</h1>
+    <!--Muestra los textos del chat-->
+    <div id="chat"></div>
+    <form id="message-box">
+        <input type="text" id="chat-message">
+        <input type="submit" value="Enviar" >
+    </form>
+</body>
+</html>
